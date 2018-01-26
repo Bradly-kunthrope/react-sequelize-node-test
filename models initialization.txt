@@ -1,0 +1,2 @@
+sequelize model:create --name User --attributes "last_name:string,first_name:string,username:string,password:string,user_type:string"
+sequelize model:create --name CLReserve --attributes "r_date_start:date,r_date_end:date,classroom_cl:string,subject_taught:string,department:string,year_level_taught:integer"

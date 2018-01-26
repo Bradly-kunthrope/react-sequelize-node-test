@@ -1,0 +1,25 @@
+{
+  "name": "sequelize-react-part2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "http://jdbrc.github.io/reactjs",
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}
