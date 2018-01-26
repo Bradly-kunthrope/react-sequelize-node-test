@@ -55,19 +55,29 @@ export default class Register extends Component {
         return (
             <div>
                 <div className="container">
-                    <input
-                        name="first_name"
-                        placeholder="First name"
-                        value={this.state.first_name}
-                        onChange={e => this.change(e)}
-                    />
-                    <br />
-                    <input
-                        name="last_name"
-                        placeholder="Last name"
-                        value={this.state.last_name}
-                        onChange={e => this.change(e)}
-                    />
+                    <div className="form-group">
+                        <div className="row">
+                            <div className="col">
+                                <label>First Name</label>
+                                <input
+                                    name="first_name"
+                                    placeholder="First name"
+                                    className="form-control"
+                                    value={this.state.first_name}
+                                    onChange={e => this.change(e)}
+                                />
+                            </div>
+                            <div className="col">
+                                <label>Last Name</label>
+                                <input
+                                    name="last_name"
+                                    placeholder="Last name"
+                                    className="form-control"
+                                    value={this.state.last_name}
+                                    onChange={e => this.change(e)}
+                                />
+                            </div>
+                        </div>
                     <br />
                     <input
                         name="username"
@@ -92,6 +102,7 @@ export default class Register extends Component {
                         onChange={e => this.change(e)}
                     />
                     <p align="center"><button color="info" onClick={e => this.onSubmit(e)}>Submit</button></p>
+                    </div>
                 </div>
             </div>
         )
