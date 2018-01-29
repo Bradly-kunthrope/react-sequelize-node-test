@@ -55,6 +55,7 @@ export default class Register extends Component {
         return (
             <div>
                 <div className="container">
+                    <br />
                     <div className="form-group">
                         <div className="row">
                             <div className="col">
@@ -78,30 +79,46 @@ export default class Register extends Component {
                                 />
                             </div>
                         </div>
+                        <br />
+                        <div className="row">
+                            <div className="col">
+                                <label>Username</label>
+                                <input
+                                    name="username"
+                                    type="email"
+                                    placeholder="Email"
+                                    className="form-control"
+                                    value={this.state.username}
+                                    onChange={e => this.change(e)}
+                                />
+                            </div>
+                            <div className="col">
+                                <label>Password</label>
+                                <input
+                                    name="password"
+                                    type="password"
+                                    placeholder="Password"
+                                    className="form-control"
+                                    value={this.state.password}
+                                    onChange={e => this.change(e)}
+                                />
+                            </div>
+                        </div>
                     <br />
-                    <input
-                        name="username"
-                        type="email"
-                        placeholder="Email"
-                        value={this.state.username}
-                        onChange={e => this.change(e)}
-                    />
+                        <div className="row">
+                            <div className="col">
+                                <label>User Type</label>
+                                <input
+                                    name="user_type"
+                                    placeholder="User Type"
+                                    className="form-control"
+                                    value={this.state.user_type}
+                                    onChange={e => this.change(e)}
+                                />
+                            </div>
+                        </div>
                     <br />
-                    <input
-                        name="password"
-                        type="password"
-                        placeholder="Password"
-                        value={this.state.password}
-                        onChange={e => this.change(e)}
-                    />
-                    <br />
-                    <input
-                        name="user_type"
-                        placeholder="User Type"
-                        value={this.state.user_type}
-                        onChange={e => this.change(e)}
-                    />
-                    <p align="center"><button color="info" onClick={e => this.onSubmit(e)}>Submit</button></p>
+                    <p align="center"><button color="info" className="btn btn-primary" onClick={e => this.onSubmit(e)}>Submit</button></p>
                     </div>
                 </div>
             </div>
